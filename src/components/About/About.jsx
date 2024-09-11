@@ -2,7 +2,7 @@ import bgImage from "../../assets/bgImgAbout.svg";
 import Description from "./Description";
 import Eductaions from "./Educations";
 import Title from "../Title";
-const About = () => {
+const About = ({Dark}) => {
   return (
     <div
       className=" h-full md:pt-5 md:mt-32 "
@@ -12,8 +12,8 @@ const About = () => {
       <Title title="About Me" />
       <div>
         <div className="flex flex-wrap ">
-          <Description />
-          <Eductaions />
+          <Description  />
+          <Eductaions Dark={Dark}/>
         </div>
       </div>
     </div>

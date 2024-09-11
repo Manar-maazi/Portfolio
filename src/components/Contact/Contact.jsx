@@ -9,7 +9,7 @@ function Contact() {
       <Title title="Contact Me" />
 
       <div className="flex flex-wrap justify-center items-center gap-10 min-h-screen md:justify-evenly">
-        <Card />
+        <Card   />
         <Form />
       </div>
     </div>

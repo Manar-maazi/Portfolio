@@ -1,8 +1,8 @@
-const Circle = () => {
-  return <div className="h-4 w-4 bg-black/50 rounded-full"></div>;
+const Circle = ({Dark}) => {
+  return <div className={`h-4 w-4  rounded-full ${Dark?'bg-sky-800/60':'bg-black/50'} `}></div>;
 };
 import {motion} from 'framer-motion'
-function Educations() {
+function Educations({Dark}) {
   const education = [
     {
       name: "Morocco, ENSA",
@@ -31,11 +31,11 @@ function Educations() {
            transition={{ duration: 0.5 }}
           >
             <div className="relative flex flex-col items-center">
-              <Circle />
+              <Circle Dark={Dark} />
 
-              <div className="h-16 border-l-2 border-black/50 "></div>
+              <div className={`h-16 border-l-2 border-black/50  ${Dark?'border-sky-800/50':'border-black/50'}`}></div>
             </div>
-            <div className="bg-black/50 p-4 rounded-sm md:pl-6 md:pr-6 ml-4 w-full">
+            <div className={` p-4 rounded-sm md:pl-6 md:pr-6 ml-4 w-full ${Dark?'bg-sky-800/60':'bg-black/50'}`}>
               <h2 className="text-lg md:text-xl">{item.description}</h2>
               <p className="text-sm md:text-base">{item.year}</p>
               <small className="text-xs md:text-sm">{item.name}</small>

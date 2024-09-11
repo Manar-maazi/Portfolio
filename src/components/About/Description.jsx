@@ -5,7 +5,8 @@ function decription() {
     initial={{ opacity:0,x:-100 }}
     whileInView={{ opacity:1,x:0 }}
     transition={{ duration:2 }}>
-      <p className="font-extralight text-justify text-sm p-4  block m-auto md:m-0 md:text-xl text-gray-300 md:w-[700px]">
+      <p className="font-extralight text-justify text-sm p-4  block m-auto md:m-0 md:text-xl text-gray-300 md:w-[700px]
+      ">
         I’m Manar Maazi, a dedicated full-stack developer with 4 years of
         experience in crafting efficient, scalable web applications. I
         specialize in using modern technologies like React, Laravel, and Spring

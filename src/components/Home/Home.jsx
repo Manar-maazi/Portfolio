@@ -1,5 +1,5 @@
 import me from "../../assets/My_img.png";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 import welcome from "../../assets/See You Soon.png";
 import bestPractic from "../../assets/bestPractice.png";
 export default function Home() {
@@ -13,16 +13,18 @@ export default function Home() {
         initial={{ y: -100, opacity: 0, rotate: 60 }}
         whileInView={{ y: 0, opacity: 1, rotate: 360 }}
         transition={{ duration: 1 }}
-        
       >
-        <motion.img src={welcome} alt="welcome" className="w-10 h-10 "
-       initial={{ x:[-2,10,0] }} 
-       animate={{ x:[-2,10,0] }} 
-       transition={{
-         duration: 5,
-         repeat: Infinity,
-         repeatType: "loop"
-       }}
+        <motion.img
+          src={welcome}
+          alt="welcome"
+          className="w-10 h-10 "
+          initial={{ x: [-2, 10, 0] }}
+          animate={{ x: [-2, 10, 0] }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
         />
         <p className="mt-2">Welcome</p>
       </motion.div>
@@ -49,12 +51,14 @@ export default function Home() {
           Manar MAAZI
         </h1>
         <p className="text-xl mb-4">Full Stack Developer</p>
-        <motion.div  className="text-white w-28 p-2 rounded-full text-center my-1 bg-sky-500 hover:bg-sky-700 md:text-xl md:w-56"
-        whileHover={{ 
-          scale:1.1
-         }}>
-          <a href="#Contact" className="block">
-            Contact Me
+        <motion.div
+          className="text-white w-28 p-2 rounded-full text-center my-1 bg-sky-500 hover:bg-sky-700 md:text-xl md:w-56"
+          whileHover={{
+            scale: 1.1
+          }}
+        >
+          <a href="/public/cv eng.pdf" download>
+            My resume
           </a>
         </motion.div>
       </motion.div>
@@ -74,7 +78,6 @@ export default function Home() {
           delay: 1,
           ease: "easeInOut"
         }}
-        
       >
         <motion.svg
           viewBox="0 0 200 200"
@@ -87,7 +90,6 @@ export default function Home() {
             duration: 1,
             ease: "easeInOut"
           }}
-          
         >
           <path
             fill="#0070FF"
@@ -100,7 +102,6 @@ export default function Home() {
           src={me}
           alt="my image"
           className=" h-96  mx-auto relative z-9  bottom-10 md:top-72"
-       
         />
       </motion.div>
     </div>
