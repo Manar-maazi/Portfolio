@@ -25,11 +25,11 @@ function App() {
     >
       <div className="">
         <Header Dark={Dark} handleDarkbtn={handleDarkbtn} colortext={colortext}/>
-        <Home />
+        <Home Dark={Dark} />
         <About Dark={Dark} />
         <Skills Dark={Dark} />
         <Works  />
-        <Contact />
+        <Contact Dark={Dark}/>
         <Footer />
       </div> 
     </div>

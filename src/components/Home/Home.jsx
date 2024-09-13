@@ -2,7 +2,7 @@ import me from "../../assets/My_img.png";
 import { motion } from "framer-motion";
 import welcome from "../../assets/See You Soon.png";
 import bestPractic from "../../assets/bestPractice.png";
-export default function Home() {
+export default function Home({Dark}) {
   return (
     <div
       id="Home"
@@ -52,12 +52,12 @@ export default function Home() {
         </h1>
         <p className="text-xl mb-4">Full Stack Developer</p>
         <motion.div
-          className="text-white w-28 p-2 rounded-full text-center my-1 bg-sky-500 hover:bg-sky-700 md:text-xl md:w-56"
+          className={`text-white w-28 p-2 rounded-full text-center my-1   md:text-xl md:w-56  ${Dark?'bg-sky-700 hover:bg-sky-500':'bg-sky-500 hover:bg-sky-700'} `}
           whileHover={{
             scale: 1.1
           }}
         >
-          <a href="/public/cv eng.pdf" download>
+          <a href="/public/Manar cv eng.pdf" download>
             My resume
           </a>
         </motion.div>

@@ -2,7 +2,7 @@ import Title from "../Title";
 import Form from "./Form";
 import Card from "./Card";
 
-function Contact() {
+function Contact({Dark}) {
   return (
     <div className=" m-5 md:m-0 :h-full "  id="Contact"
      >
@@ -10,7 +10,7 @@ function Contact() {
 
       <div className="flex flex-wrap justify-center items-center gap-10 min-h-screen md:justify-evenly">
         <Card   />
-        <Form />
+        <Form Dark={Dark} />
       </div>
     </div>
   );

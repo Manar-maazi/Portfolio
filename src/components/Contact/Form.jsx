@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import bgimg from "../../assets/BgImgContact.png";
 
-function Form() {
+function Form({Dark}) {
   return (
     <motion.div
       initial={{ y: 100, opacity: 0, }}
@@ -65,7 +65,7 @@ function Form() {
 
         {/* Submit Button */}
         <motion.div
-          className="text-gray-100 text-xl p-2 rounded-full text-center my-1 bg-sky-500 hover:bg-sky-700 m-auto mt-10 w-24 cursor-pointer"
+          className={`text-gray-100 text-xl p-2 rounded-full text-center my-1  m-auto mt-10 w-24 cursor-pointer ${Dark?'bg-sky-700 hover:bg-sky-500':'bg-sky-500 hover:bg-sky-700'}`}
           whileHover={{ scale: 1.1, boxShadow: "1px 1px 2px #0369a1" }}
         >
           <button type="submit">Send</button>

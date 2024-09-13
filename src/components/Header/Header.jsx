@@ -1,6 +1,9 @@
 import { useState } from "react";
 
 import { AiOutlineMenu } from "react-icons/ai";
+
+import { IoToggleOutline } from "react-icons/io5";
+import { BsToggleOff } from "react-icons/bs";
 const Header = ({ Dark, handleDarkbtn, colortext }) => {
   const listNav = ["Home", "About", "Skills", "Works"];
   const [togle, setTogle] = useState(false);
@@ -23,10 +26,14 @@ const Header = ({ Dark, handleDarkbtn, colortext }) => {
     >
       <div>
         <h3
-          className={`hover:cursor-pointer font-bold p-2 m-1 ${colortext}  `}
+          className={`hover:cursor-pointer font-bold p-2 m-1 border-red-500  ${colortext}  `}
           onClick={handleDarkbtn}
         >
-          MNR_Dev
+          {Dark ? (
+            <BsToggleOff className="mx-1" />
+          ) : (
+            <IoToggleOutline className="mx-1" />
+          )}
         </h3>
       </div>
       <span
